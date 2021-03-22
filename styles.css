@@ -1,0 +1,124 @@
+/*-----Globales-----*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/*-----Variables-----*/
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --white: #fafafa;
+    --black: #141110;
+}
+
+/*-----Background-----*/
+
+main {
+    height: 100vh;
+    background-color: var(--dark-cyan);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: -180px -200px, 150px 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--white);
+    width: 90vw;
+    height: auto;
+    border-radius: 15px;
+}
+
+
+/*-----Card-Top-----*/
+
+
+.card__top {
+    height: 130px;
+    background-image: url(images/bg-pattern-card.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+
+.card__image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--white);
+    border: 5px solid var(--white);
+    overflow: hidden;
+    position: relative;
+    left: calc(50% - 50px);
+    top: -50px;
+}
+
+.card__image--profile {
+    width: 100%;
+}
+
+.card__info {
+    position: relative;
+    top: -25px;
+}
+
+.card__info--name {
+    display: inline;
+    margin-top: 100px;
+}
+
+.card__info--age {
+    display: inline;
+    margin-left: 5px;
+    font-size: 1.8rem;
+    color: var(--dark-grayish-blue);
+}
+
+.card__info--city {
+    font-size: 16px;
+    color: var(--dark-grayish-blue);
+    margin-top: 10px;
+
+}
+
+/*-----Card-Stats-----*/
+
+.card__stats {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid #eeeeee;
+    padding: 25px 0;
+    
+}
+
+.stats__nums {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.stats__names {
+    color: var(--dark-grayish-blue);
+    letter-spacing: 1px;
+    margin-top: 5px;
+}

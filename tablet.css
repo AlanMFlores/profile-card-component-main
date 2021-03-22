@@ -1,0 +1,7 @@
+.card {
+    max-width: 700px;
+}
+
+main {
+    background-position: -300px -300px, 300px 300px;
+}
